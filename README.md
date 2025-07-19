@@ -2,27 +2,26 @@
 
 Submitted by: **Daniel Woldetsaidk**
 
-**TapToTrivia** is an iOS quiz app that challenges users with fun, fast paced trivia questions.
-Built with Swift and UIKit, it fetches questions from the Open Trivia Database API.
+**TapToTrivia**  is an interactive iOS app that challenges users with fun, fast-paced trivia questions across multiple categories and difficulties.Built with Swift and UIKit, it fetches questions from the Open Trivia Database API and gives instant feedback after each answer.
 
 Time spent: **10** hours spent in total
 
-## Required Features
 
-The following **required** functionality is completed:
+##  Completed Features
 
-- [x ] User can view and answer at least 5 trivia questions.
-- [ x] App retrieves question data from the Open Trivia Database API.
-- [ x] Fetch a different set of questions if the user indicates they would like to reset the game.
-- [ x] Users can see score after submitting all questions.
-- [ x] True or False questions only have two options.
+- [x] User can view and answer at least 5 trivia questions.
+- [x] App retrieves trivia question data from the Open Trivia Database API.
+- [x] Fetches a new set of questions when the user resets the game.
+- [x] User sees their final score after answering all questions.
+- [x] True or False questions only show two answer buttons.
+- [x] User can select question **difficulty** using a `UISegmentedControl`.
+- [x] User can select question **category** using a `UIPickerView`.
+- [x] Quiz UI is hidden until the user taps the **Start** button.
+- [x] After each answer, user receives feedback via `UIAlertController` showing the correct answer.
+- [x] After the game ends, Start/Difficulty/Category options reappear to allow restart.
+- [x] App supports both **portrait and landscape** orientations with responsive layout.
 
 
-The following **optional** features are implemented:
-
-  
-- [ ] Allow the user to choose a specific category of questions.
-- [ ] Provide the user feedback on whether each question was correct before navigating to the next.
 
 The following **additional** features are implemented:
 
@@ -31,10 +30,10 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 <div>
-    <a href="https://www.loom.com/share/700d57e6dd4c4279946c8352547f4861">
+    <a href="https://www.loom.com/share/f20d84b431184f56ab0f17a3c488230f">
     </a>
-    <a href="https://www.loom.com/share/700d57e6dd4c4279946c8352547f4861">
-      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/700d57e6dd4c4279946c8352547f4861-7c2afac74d7d8246-full-play.gif">
+    <a href="https://www.loom.com/share/f20d84b431184f56ab0f17a3c488230f">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/f20d84b431184f56ab0f17a3c488230f-ef422f2b31409259-full-play.gif">
     </a>
   </div>
 ## Notes
@@ -48,4 +47,3 @@ Describe any challenges encountered while building the app.
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
     You may obtain a copy of the License at
-
