@@ -10,14 +10,23 @@ import Foundation
 
 class TriviaQuestionService {
     static func fetchQuestions(amount: Int = 5,
-                               completion: (([TriviaQuestion]) -> Void)? = nil) {
-        
-        let parameters = "amount=\(amount)"
-        
-        guard let url = URL(string: "https://opentdb.com/api.php?\(parameters)") else {
-            print(" Invalid URL")
-            return
-        }
+                                   category: Int? = nil,
+                                   difficulty: String? = nil,
+                                   completion: (([TriviaQuestion]) -> Void)? = nil) {
+            
+            var parameters = "amount=\(amount)"
+            
+            if let category = category {
+                parameters += "&category=\(category)"
+            }
+            if let difficulty = difficulty {
+                parameters += "&difficulty=\(difficulty)"
+            }
+            
+            guard let url = URL(string: "https://opentdb.com/api.php?\(parameters)") else {
+                print("Invalid URL")
+                return
+            }
         
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
             
